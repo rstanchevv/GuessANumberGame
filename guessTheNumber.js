@@ -7,7 +7,7 @@ function guessTheNumber(){
     let guessCounter = 0;
 let chooseDifficultyReadLine = function(){
     readline.question(`Choose difficulty: "easy" - 10 tries / "medium" - 7 tries / "hard" - 5 tries` , answer => {
-        if (answer != "easy" && answer && "medium" && answer != "hard"){
+        if (answer != "easy" && answer != "medium" && answer != "hard"){
             console.log(`Wrong input. Please pick easy, medium or hard.`)
             chooseDifficultyReadLine()
         }
